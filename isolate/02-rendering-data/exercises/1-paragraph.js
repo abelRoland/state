@@ -9,6 +9,15 @@ const expect = chai.expect;
  * @returns {HTMLParagraphElement} a rendered paragraph element
  */
 const renderParagraph = (text, classList = []) => {
+  const tagP = document.createElement('p');
+  
+  for (let i = 0; i < classList.length; i++) {
+    tagP.classList.add(classList[i]);
+  }
+
+  tagP.innerHTML = text;
+
+  return tagP;
 
 };
 

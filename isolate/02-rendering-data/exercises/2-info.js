@@ -10,11 +10,11 @@ const expect = chai.expect;
  * @returns {HTMLDetailsElement}
  */
 const renderInfo = (caption, mainText, id = '') => {
-  const detailsEl = document.createElement('_');
+  const detailsEl = document.createElement('details');
   _;
 
-  const summaryEl = document.createElement('_');
-  _;
+  const summaryEl = document.createElement('summary');
+  summaryEl.innerHTML = caption;
   _;
 
   const pEl = document.createElement('_');
